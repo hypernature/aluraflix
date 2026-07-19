@@ -16,7 +16,6 @@ const Header = ()=> {
             width: '180px',
             height: '54px',
             cursor: 'pointer',
-            alignItems: 'center',
             justifyContent: 'center'
 
     }

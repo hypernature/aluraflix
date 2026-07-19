@@ -1,12 +1,14 @@
-import '../css/estilo.css'
 import { Link } from 'react-router-dom'
 import { datos } from '../data/archivos_iniciales'
 
 const VideoCards = ({ url, color, nombreCategoria }) => {
-
-    let colorCard = {
-        border: `2px solid ${color}`, 
-        backgroundColor: `${color}`
+    const colorCard = {
+        borderBottom: `5px solid ${color}`,
+        borderRadius: '4px 4px 0 0',
+        boxShadow: '0px 0px 17px 8px rgba(0,0,0,0.14) inset',
+        width: '432px',
+        height: '260px',
+        backgroundColor: '#000000'
     }
     return (
         <>
@@ -14,8 +16,6 @@ const VideoCards = ({ url, color, nombreCategoria }) => {
                 datos.videos.map(video => {
                     const { id, urlVideo, urlImagen, categoria } = video
                     if(categoria === nombreCategoria){
-                    } else {
-                        return null;
                         return (
                         <Link to={`${urlVideo}`} target="_blank" rel="noopener noreferrer" key={id}>
                             <div className='videocard' style={ colorCard } key={id}>
@@ -23,11 +23,11 @@ const VideoCards = ({ url, color, nombreCategoria }) => {
                             </div>
                         </Link>
                         );
-                    }   
+                    }
+                    return null;
                 })
             }
         </>
-        
     )
 }
 
