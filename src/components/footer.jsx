@@ -2,7 +2,7 @@ import { styled } from 'styled-components';
 import { BsInstagram, BsLinkedin } from "react-icons/bs";
 import { FaSquareFacebook, FaXTwitter } from "react-icons/fa6";
 import './Footer.css';
-import logo from '../../assets/logo.png';
+import logo from '../img/LogoFooter.png';
 
 const StyledFooter = styled.footer`
     display: flex;
