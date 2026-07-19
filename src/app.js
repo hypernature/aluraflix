@@ -1,10 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
+import Home from './Home';
 import Header from './components/Header';
 import GlobalStyle from './globalstyle';
-import Page404 from './pages/Page404'
-import NuevoVideo from './pages/NuevoVideo';
-import NuevaCategoria from './pages/NuevaCategoria';
+import Page404 from './Page404'
+import NuevoVideo from './NuevoVideo';
+import NuevaCategoria from './NuevaCategoria';
 import Footer from './components/Footer';
 
 function App() {
