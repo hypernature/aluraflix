@@ -1,4 +1,4 @@
-import '../css/estilos.css'
+import '../css/estilo.css'
 
 const TextArea = ({titulo, required, error, valor, actualizarValor}) => {
 

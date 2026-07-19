@@ -1,4 +1,4 @@
-import '../css/estilos.css'
+import '../css/estilo.css'
 import { Link } from 'react-router-dom'
 import { datos } from '../data/archivos_iniciales'
 

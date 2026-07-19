@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import '../css/estilos.css'
+import '../css/estilo.css'
 import Player from '../img/player.png'
 
 const Hero = ()=>{

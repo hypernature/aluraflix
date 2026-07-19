@@ -1,4 +1,4 @@
-import '../css/estilos.css'
+import '../css/estilo.css'
 
 const CampoTexto = ({titulo, required, error, valor, actualizarValor }) => {
     

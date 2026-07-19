@@ -1,4 +1,4 @@
-import '../css/estilos.css'
+import '../css/estilo.css'
 import LogoMenu from "../img/LogoMenu.png"
 import { Link } from 'react-router-dom'
 import ButtonLink from './buttonlink'

@@ -1,4 +1,4 @@
-import '../css/estilos.css'
+import '../css/estilo.css'
 
 const ButtonForm = ({titulo, styles}) => {
     return <input type="submit" value ={titulo} style={styles}>
