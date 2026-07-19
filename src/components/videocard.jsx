@@ -14,6 +14,8 @@ const VideoCards = ({ url, color, nombreCategoria }) => {
                 datos.videos.map(video => {
                     const { id, urlVideo, urlImagen, categoria } = video
                     if(categoria === nombreCategoria){
+                    } else {
+                        return null;
                         return (
                         <Link to={`${urlVideo}`} target="_blank" rel="noopener noreferrer" key={id}>
                             <div className='videocard' style={ colorCard } key={id}>
