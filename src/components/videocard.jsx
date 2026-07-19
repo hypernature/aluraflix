@@ -13,19 +13,18 @@ const VideoCards = ({ url, color, nombreCategoria }) => {
     return (
         <>
             {
-                datos.videos.map(video => {
-                    const { id, urlVideo, urlImagen, categoria } = video
-                    if(categoria === nombreCategoria){
+                datos.videos
+                    .filter(video => video.categoria === nombreCategoria)
+                    .map(video => {
+                        const { id, urlVideo, urlImagen } = video
                         return (
-                        <Link to={`${urlVideo}`} target="_blank" rel="noopener noreferrer" key={id}>
-                            <div className='videocard' style={ colorCard } key={id}>
-                                <img src={`${urlImagen}`} alt="Imagen video card" key={id}/>
-                            </div>
-                        </Link>
+                            <Link to={`${urlVideo}`} target="_blank" rel="noopener noreferrer" key={id}>
+                                <div className='videocard' style={ colorCard } key={id}>
+                                    <img src={`${urlImagen}`} alt="Imagen video card" key={id}/>
+                                </div>
+                            </Link>
                         );
-                    }
-                    return null;
-                })
+                    })
             }
         </>
     )
