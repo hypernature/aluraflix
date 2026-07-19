@@ -1,4 +1,4 @@
-import VideoCard from "./VideoCard"
+import VideoCards from "./videocard"
 import { datos } from "../data/archivos_iniciales"
 
 const ListaCategorias = () => {
@@ -25,7 +25,7 @@ const ListaCategorias = () => {
                                     </div>
                                     <div className="categorias__listavideos">
 
-                                        <VideoCard url='/videos' nombreCategoria={nombre} color={ color }/>
+                                        <VideoCards url='/videos' nombreCategoria={nombre} color={ color }/>
                                         
                                     </div>
                                 </div>
